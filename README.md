@@ -177,7 +177,7 @@ The website uses CSS custom properties for easy theme customization:
 
 ## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This portfolio website is available for viewing and reference. All content and code represent personal work and projects by Aviel Zuri-Shaday.
 
 ## 📧 Contact
 
