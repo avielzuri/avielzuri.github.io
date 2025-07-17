@@ -398,6 +398,7 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    contain: layout style paint;
 }
 
 .project-card:hover {
@@ -685,10 +686,10 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: var(--header-bg);
         flex-direction: column;
         padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 10px var(--shadow);
         transform: translateY(-10px);
         opacity: 0;
         visibility: hidden;
@@ -710,11 +711,11 @@ footer {
     .nav-menu a {
         display: block;
         padding: 1rem;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--border-color);
     }
     
     .nav-menu a:hover {
-        background: #f8f9fa;
+        background: var(--section-bg);
     }
     
     .nav-linkedin {
