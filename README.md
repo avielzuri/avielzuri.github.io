@@ -1,6 +1,6 @@
 # Aviel Zuri-Shaday | Portfolio Website
 
-A modern, responsive portfolio website showcasing aerospace engineering projects, research experience, and technical skills. Built with vanilla HTML, CSS, and JavaScript with a focus on performance, accessibility, and user experience.
+A modern, responsive portfolio website showcasing aerospace engineering projects and research. Built with clean HTML, CSS, and JavaScript for optimal performance and simplicity.
 
 ## 🚀 Live Demo
 
@@ -8,193 +8,90 @@ Visit the live site: [avielzuri.github.io](https://avielzuri.github.io)
 
 ## ✨ Features
 
-### 🎨 Design & UX
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Dark/Light Theme**: Toggle between themes with preference persistence
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Smooth Scrolling**: Enhanced navigation with animated scroll behavior
+### 🎨 Modern Design & UX
+- **Single-Page Architecture**: Clean, fast-loading HTML file
+- **Responsive Design**: Mobile-first approach with seamless desktop experience
+- **Dark/Light Theme**: System preference detection with manual toggle
+- **Smooth Animations**: CSS transitions and JavaScript-powered interactions
+- **Modern UI Components**: Custom-built components with consistent styling
 
-### 📱 Mobile Experience
-- **Mobile-First**: Responsive design prioritizing mobile experience
-- **Hamburger Menu**: Collapsible navigation for mobile devices
-- **Touch Optimized**: Properly sized touch targets and interactions
+### 📱 Interactive Elements
+- **Project Gallery**: Auto-cycling image slideshow with manual navigation
+- **Project Modals**: Detailed project information with media integration
+- **Video Controls**: Auto-play/pause functionality for project demos
+- **Smooth Scrolling**: Seamless navigation between sections
 
-### ♿ Accessibility
-- **ARIA Labels**: Proper accessibility attributes for screen readers
-- **High Contrast**: Excellent color contrast ratios in both themes
-- **Keyboard Navigation**: Full keyboard accessibility support
-- **Semantic HTML**: Proper HTML5 structure for accessibility
+### 🛠️ Technical Features
+- **Pure HTML/CSS/JS**: No build process or dependencies required
+- **Git LFS**: Large file support for video content
+- **Performance Optimized**: Minimal code, fast loading, efficient media handling
+- **SEO Friendly**: Proper meta tags, Open Graph, and semantic HTML
 
-### ⚡ Performance
-- **Lazy Loading**: Images load only when needed
-- **CSS Containment**: Optimized rendering performance
-- **Smooth Animations**: Hardware-accelerated transitions
-- **Lightweight**: No external dependencies, pure vanilla JavaScript
-
-### 🔒 Security
-- **External Link Protection**: Proper `rel="noopener noreferrer"` attributes
-- **Error Handling**: Robust DOM query error handling
-- **Input Validation**: Safe handling of user interactions
+### 🎯 Project Showcase
+- **Orbital Dynamics Simulator**: Interactive 3D satellite orbit visualization with Python
+- **Over Terrain Vehicle**: Autonomous navigation system with LiDAR and Arduino
+- **EEG Motion Classification**: NASA-funded brain-computer interface research
+- **Haptics-Enabled Systems**: Flight simulation with tactile feedback
 
 ## 🛠️ Tech Stack
 
-- **HTML5**: Semantic structure and accessibility
-- **CSS3**: Modern styling with custom properties (CSS variables)
-- **JavaScript (ES6+)**: Interactive features and theme management
-- **GitHub Pages**: Hosting and deployment
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Styling**: CSS Custom Properties, Modern CSS Grid/Flexbox
+- **Media**: Git LFS for video files
+- **Deployment**: GitHub Pages with GitHub Actions
 
 ## 📁 Project Structure
 
 ```
 avielzuri.github.io/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling and themes
-├── README.md          # Project documentation
-├── _config.yml        # Jekyll configuration
-├── context_dump.txt   # Project context and content
-└── images/           # Project images
-    ├── OrbitDynSim/  # Orbital Dynamics Simulator images
-    └── OTV/          # Over Terrain Vehicle images
+├── index.html              # Main website file
+├── images/                 # Project images
+├── videos/                 # Project videos (Git LFS)
+├── .github/workflows/      # GitHub Actions deployment
+├── .gitattributes         # Git LFS configuration
+├── .gitignore             # Git ignore rules
+├── README.md              # This file
+└── context_dump.txt       # Project context and documentation
 ```
 
-## 🎯 Sections
+## 🚀 Development
 
-### 🏠 Hero Section
-- Professional introduction
-- Contact information
-- Call-to-action buttons
-- Theme toggle
+Since this is a static HTML website, no build process is required:
 
-### 👨‍💼 About Section
-- Professional background
-- Current role and education
-- Technical skills organized by category
-- Languages proficiency
-
-### 🚀 Projects Section
-- **Orbital Dynamics Simulator**: Python-based satellite orbit visualization
-- **Over Terrain Vehicle**: C++/Arduino autonomous vehicle project
-- **EEG Motion Classification**: Signal processing research project
-
-### 📄 Resume Section
-- Education details
-- Professional experience
-- Research projects
-- Technical achievements
-
-## 🚦 Getting Started
-
-### Prerequisites
-- Modern web browser
-- Git (for development)
-- Python (for local development server)
-
-### Local Development
-
-1. **Clone the repository**
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/avielzuri/avielzuri.github.io.git
    cd avielzuri.github.io
    ```
 
-2. **Start local server**
-   ```bash
-   python -m http.server 8000
-   ```
+2. **Open in browser**:
+   - Simply open `index.html` in your web browser
+   - Or use a local server: `python -m http.server 8000`
 
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
+3. **Make changes**:
+   - Edit `index.html` directly
+   - All styles and scripts are embedded in the single file
 
-### Making Changes
+## 📦 Deployment
 
-1. **Edit files**
-   - `index.html` for content changes
-   - `styles.css` for styling modifications
+The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions.
 
-2. **Test locally**
-   ```bash
-   python -m http.server 8000
-   ```
+## 🎯 About
 
-3. **Deploy changes**
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push origin main
-   ```
+This portfolio showcases the work of Aviel Zuri-Shaday, an Aerospace Engineering student at the University of Maryland specializing in:
 
-## 🎨 Theme Customization
-
-The website uses CSS custom properties for easy theme customization:
-
-```css
-:root {
-    --bg-color: #fff;
-    --text-color: #333;
-    --accent-color: #3498db;
-    /* ... more variables */
-}
-
-[data-theme="dark"] {
-    --bg-color: #0f0f0f;
-    --text-color: #f0f0f0;
-    --accent-color: #4a9eff;
-    /* ... dark theme overrides */
-}
-```
-
-## 📱 Browser Support
-
-- Chrome 60+
-- Firefox 60+
-- Safari 12+
-- Edge 79+
-
-## 🔧 Performance Optimizations
-
-- **Lazy Loading**: Images load on scroll
-- **CSS Containment**: Improved rendering performance
-- **Preconnect**: DNS prefetching for external resources
-- **Image Dimensions**: Prevents layout shift during loading
-- **Smooth Transitions**: Hardware-accelerated animations
-
-## 📊 SEO Features
-
-- **Meta Tags**: Comprehensive SEO metadata
-- **Semantic HTML**: Proper heading hierarchy
-- **Alt Text**: Descriptive image alternatives
-- **Structured Data**: Professional profile information
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 📝 License
-
-This portfolio website is available for viewing and reference. All content and code represent personal work and projects by Aviel Zuri-Shaday.
+- **Flight Simulation & Control Systems**
+- **Autonomous Vehicle Navigation**
+- **EEG Signal Processing & Brain-Computer Interfaces**
+- **Haptic Feedback Systems**
+- **Orbital Mechanics & Space Systems**
 
 ## 📧 Contact
 
-**Aviel Zuri-Shaday**
-- Email: [avielzurishaday@gmail.com](mailto:avielzurishaday@gmail.com)
-- Phone: [347-241-7945](tel:347-241-7945)
-- LinkedIn: [linkedin.com/in/aviel-zuri-shaday](https://linkedin.com/in/aviel-zuri-shaday)
-- Location: Queens, NY
+- **Email**: avielzurishaday@gmail.com
+- **LinkedIn**: [linkedin.com/in/aviel-zuri-shaday](https://www.linkedin.com/in/aviel-zuri-shaday)
+- **Location**: Queens, NY / College Park, MD
 
-## 🎓 About the Developer
+## 📄 License
 
-Aerospace Engineering student at University of Maryland with expertise in:
-- Flight simulation and autonomous systems
-- EEG signal processing and brain-computer interfaces
-- Python, C++, and web development
-- Research in Extended Reality Flight Simulation Lab
-
----
-
-**Developed by Aviel Zuri-Shaday** | *Enhanced with Claude-4-Sonnet AI assistance*
+This project is open source and available under the [MIT License](LICENSE).

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build artifacts
+.vite/
+public/
+
+# Large executables
+*.msi
+*.exe
+
+# Development files
+context_dump.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo 
