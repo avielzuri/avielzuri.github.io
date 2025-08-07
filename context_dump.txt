@@ -1,0 +1,1113 @@
+
+The main goal for this site is to showcase personal and professional projects. To start out, it will not have too many projects, but as time goes on it will include more projects over time.
+
+To start out, V1 of the site will be basic, a placeholder, so I can use it for now as I work on a more polished version over time.
+
+Resume:
+Aviel Zuri-Shaday
+347-241-7945 ― Queens, NY ― avielzurishaday@gmail.com ― in/aviel-zuri-shaday ― Portfolio
+
+Education
+University of Maryland A. James Clark School of Engineering GPA: 3.966
+Bachelor of Science, Aerospace Engineering (expected) May 2026
+• Dean’s List for academic excellence Freshman, Sophomore, and Junior years.
+• Relevant Courses: Aerodynamics, Dynamics, Diff. Eq., Aero Systems, C++ and MATLAB, Python
+Bar Ilan University Gap Year Study Abroad GPA: 4.0
+30+ Credits Oct. 2021 — Jun. 2022
+
+Experience
+Extended Reality Flight Simulation and Control Lab College Park, MD
+Undergraduate Research Assistant Sep. 2024 — Present
+EEG Based Motion Classification in a Controlled Navigation Task (In Progress)
+• Engineered an EEG signal processing pipeline in Python using NumPy and SciPy, to optimize for motion classification.
+• Visualized data with Matplotlib to interpret correlations between complex EEG patterns and movement.
+• Implemented Welch’s method for PSD estimation and applied STFT to capture time-frequency EEG patterns.
+• Compiled and presented results to researchers, providing data-driven insights to validate and optimize system.
+Haptics-Enabled Pilot Guidance System
+• Implemented haptic feedback systems using Bhaptics and Tesla Suits, using Python with live simulator data.
+• Utilized Python to optimize haptic feedback suits, reducing latency by 70%.
+• Research funded by NASA, Lockheed Martin, ONR, Army, and NSF, focusing on flight simulator feedback systems.
+• Conducted testing with subjects to troubleshoot, diagnose, and solve issues.
+Gotham Air, GAMC New York, NY
+HVAC Technician Jun. — Aug. 2024
+• Welded copper pipes via brazing and silver soldering.
+• Conducted high pressure tests with Nitrogen at 200-500 psi, ensuring long term system reliability and leak free welds.
+• Diagnose, Troubleshoot, and Resolve HVAC issues given minimal info from clients.
+• Locate and correct circuit malfunctions, utilizing Multimeter, fix/replace capacitors, contactors, among other parts.
+Alumeshet-USA New York, NY
+Intern Jun. — Aug. 2023
+• Collaborated with contractors during site visits ensuring correct installation of wall units, and documenting progress.
+• Presented project progress, current setbacks, and potential solutions in meetings with contractors and suppliers.
+• Owned social media marketing initiative, with 2 new social media pages, multiplying client inquiries by 3x.
+Lavner Education Virtual
+Instructor and IT Technician Jun. 2020 — Aug. 2021
+• Educated over 50 campers on LUA and Scratch coding, achieving 95% positive feedback from campers and parents.
+• Taught basic circuitry using Minecraft Redstone, expressing complex ideas in simple ways for kids to understand.
+
+Projects
+Orbital Dynamics Simulator College Park, MD
+Python Project Nov. — Dec. 2024
+• Created a customizable orbit simulator, allowing the user to change eccentricity radius and inclination of orbit.
+• Utilized Matplotlib, SciPy, and NumPy libraries to calculate and render 3D animation of the created orbit.
+• Optimized Differential Equation solver to optimize accuracy and speed of calculations with a dynamic solver.
+ENES: Over Terrain Vehicle College Park, MD
+Team Leader: OTV Otters Jan. — May 2023
+• Independently coded autonomous navigation system in C++ on Arduino, navigating over rough and dynamic terrain.
+• Independently integrated all subsystems of the O.T.V., including Lidar, Motor#000240s, Color Sensor, and Servos.
+• Secured a position as 1 of 19 teams, outshining 70 applicants, for a prestigious competitive showcase.
+
+Skills
+Coding Python, C++, MATLAB, LUA Languages Hebrew (Native), Spanish (Basic)
+Workflow Microsoft Office, Google Workspace, LATEX CAD Fusion 360, SolidWorks
+
+** PROJECTS **
+*ORBITAL DYNAMICS SIMULATOR:*
+Orbital Simulation Project: User Manual
+
+By: Aviel Zuri-Shaday Sec: 0106
+
+Overview
+
+This project simulates satellite orbits around Earth, providing a 3D visualization of
+their trajectories. Users can input specific orbital parameters to analyze how
+eccentricity and inclination affect satellite motion. The program relies on key
+principles of orbital mechanics and generates dynamic animations for educational
+or analytical purposes.
+
+Prerequisites
+To run the project, ensure the following requirements are met:
+Required Libraries:
+- Python 3.8 or later
+- numpy
+- matplotlib
+- scipy
+Install the necessary Python libraries with:
+
+pip install numpy matplotlib scipy
+
+Running the Program
+1. Obtain the Code
+
+Save the script file as `orbital_simulation.py` in a suitable directory.
+2. Set Up Your Environment
+Ensure your Python environment matches the prerequisites. If needed, create a
+virtual environment and install the required libraries.
+3. Execute the Program
+Run the script from the terminal or your preferred Python IDE:
+python orbital_simulation.py
+
+4. Input Parameters
+The program prompts the user to input the following:
+
+1. Distance from Earth's Surface (km): Specify the satellite's altitude
+above Earth’s surface (e.g., 500).
+2. Phi (deg): Enter the orbital inclination angle in degrees (e.g., 45).
+3. Eccentricity (0–0.99): Provide the orbital eccentricity, where 0 is
+circular and values approaching 1 are highly elliptical (e.g., 0.1).
+4. Radius of Earth (km): Input Earth's radius (default: 6378).
+5. Mass of Earth (kg): Input Earth's mass (default: 5.9722e24`).
+
+Example input:
+Distance from surface of earth (km): 500
+Phi (deg): 45
+Eccentricity (0 - 0.99): 0.1
+Radius of Earth (km) [Real: 6,378 km]: 6378
+Mass of Earth (kg) [Real: 5.9722e24 km]: 5.9722e24
+
+5. View the Visualization
+After computation, a 3D animation of the satellite’s orbit is displayed. The
+animation includes:
+
+- The satellite’s trajectory.
+- The satellite’s current position.
+- A rendered Earth.
+- x, y, and z axes.
+
+Features
+
+1. Custom Orbital Parameters: Users can explore how altitude, eccentricity, and
+inclination affect orbital dynamics.
+2. 3D Animation: Interactive visualization of:
+- Satellite trajectory.
+- Earth as a spherical body.
+- Axis orientation for spatial reference.
+-
+3. Dynamic Scaling: Axis limits adjust automatically to accommodate varying
+orbital sizes.
+
+Example Outputs
+Example Inputs:
+Distance from surface of earth (km): 500
+Phi (deg): 45
+Eccentricity (0 - 0.99): 0.1
+Radius of Earth (km) [Real: 6,378 km]: 6378
+Mass of Earth (kg) [Real: 5.9722e24 km]: 5.9722e24
+
+Example Output:
+(Screenshot of output animation)
+
+Orbital Simulation Project: Design
+
+By: Aviel Zuri-Shaday Sec: 0106
+
+Introduction
+
+The Orbital Simulation Project is a Python-based program that simulates satellite
+orbits around Earth. It provides an interactive 3D visualization of the satellite’s
+trajectory, enabling users to analyze how orbital parameters such as altitude,
+inclination, and eccentricity influence the orbit. This project combines physics,
+astronomy, and software engineering concepts to create a visually engaging
+educational tool.
+
+Motivation and Background
+This project's inspiration stems from the increasing importance of satellite
+technology in fields such as communication, Earth observation, and space
+exploration. Understanding orbital mechanics is crucial for anyone involved in
+aerospace engineering or astrophysics. By creating a simulation that visualizes
+these principles, this project aims to provide both an educational resource and a
+showcase of programming and mathematical skills.
+Before starting this project, I researched similar tools and projects, including:
+- NASA’s Eyes on the Solar System: A web-based visualization tool offering
+complex orbital simulations.
+- Kerbal Space Program: A physics-based space flight simulation game.
+- AstroPy Library: A Python library for astrophysics computations.
+These projects guided me but were either too complex or too simplistic for the
+scope of this assignment. The goal was to strike a balance by creating a focused
+simulation tool that is technically robust yet accessible.
+
+Design Process
+Initial Approach
+The project began with the following core objectives:
+1. Accurate Orbital Mechanics: Kepler and Newtonian equations for gravity
+and orbital mechanics to compute the elliptical orbit of a satellite simulated
+as a negligible mass relative to that of the earth
+2. Interactive Inputs: Allow users to customize orbital parameters, including
+altitude, orbital inclination, eccentricity, and planetary body parameters of
+radius and mass.
+3. Visual Appeal: Create a dynamic 3D animation that allows for the
+visualization of the orbit that the satellite takes around the planet. Including
+the ability for the user to interact with the simulation.
+The initial design was broken down into several components:
+Equations of Motion: Derived from:
+
+Newton’s second law - F = ma
+
+The Universal law of gravitation - F
+g =
+GMm
+||r||
+3 r
+
+Numerical Solver: The ode function lsoda from scipy.integrate was chosen
+for solving the equation of motion;
+
+a = − with,
+
+rμ
+||r||
+3 μ = GM
+
+Visualization: Implemented using matplotlib in 3D mode by the use of:
+- projection='3d' for the use of the 3D space
+
+- subplot.plot(x,y,z) to plot the trajectory
+- subplot.plot_surface(x,y,z) to plot the surface of the planet
+- subplot.quiver(x,y,z,u,v,w) to plot the arrows for the axis
+
+Inputs: Get user inputs via the console with the use of:
+
+- input( ‘User input’ ) Obtain user inputs as variables
+
+Challenges and Iterations:
+1. Display of Planet and Trajectory: The early iterations of the code focused on
+calculating and plotting a static image of the planet and trajectory with all
+the parameters set to constants. The first issue that arose was in the display
+of the Planet and the path the satellite would follow. This was solved by
+testing with a preset path, and the development of the central body code
+that would output a sphere at the origin:
+u , _v = np.mgrid[ 0:2*np.pi:20j,0:np.pi:10j ]
+_x = earth_radius * np.cos(_u)*np.sin(_v)
+_y = earth_radius * np.sin(_u)*np.sin(_v)
+z = earth_radius * np.cos(_v)
+ax.plot_surface( _x,_y,_z, cmap = 'Blues',...
+
+alpha=0.6, zorder=0 )
+
+Line 1: establish theta and phi of spherical coordinates
+Line 2-4: Find (x,y,z) in cartesian coordinates
+Line 5: Plot sphere
+
+2. Calculation of Orbits: Once the visual was working, I worked on getting the
+calculation of the orbits working via the use of the scipy ode solver. I
+decided on the lsoda computation method because of its efficient balance
+of performance and the quality of the solution that it found.
+
+solver = ode(diffeq)
+solver.set_integrator('lsoda')
+solver.set_initial_value(y0,0)
+solver.set_f_params(earth_mu)
+
+It solved the equation of motion that was found using newtons second law
+and the universal law of gravitation:
+
+a = −
+rμ
+||r||
+3
+
+3. Axis Scaling: Initially, the 3D visualization axes did not adjust dynamically,
+causing visual inconsistencies. Adding dynamic scaling resolved this issue,
+ensuring the orbit is fully visible regardless of its size. ( This is placed in the
+update function and updates with every frame)
+
+max_val = max(earth_radius, np.max(...
+
+np.abs(rs[:frame+1,:]))) + 200
+
+ax.set_xlim( [ -max_val,max_val ] )
+ax.set_ylim( [ -max_val,max_val ] )
+ax.set_zlim( [ -max_val,max_val ] )
+Line 1: Find the magnitude of the highest plotted value and add 200
+Line 2-4: Set the x, y, and z limes to the max value ( - ) & ( + )
+4. Animation of the Orbit: Another big challenge of this project was to animate
+the orbits using the matplotlib library. The solution that was found was to
+create an update function that would update the shape of the orbit and the
+location of the satellite frame by frame. I also implemented a tail for the
+satellite to make the visualization more interesting to look at and allow for a
+better understanding a view of the trajectory that the satellite took.
+The plots were set up with:
+trajectory1, = ax.plot([], [], [], 'b',alpha=0.7, zorder=25)
+trajectory2, = ax.plot([], [], [], 'k', alpha=0.7,...
+
+label='Trajectory', zorder=20)
+satellite, = ax.plot([], [], [], 'bo', label='Satellite', zorder=30)
+
+With:
+Trajectory1 The tail
+Trajectory2 The orbit
+Satellite The current location of the satellite
+Using:
+label= For the legend labels
+zorder= For proper layering
+alpha= For transparency of the tail and orbit
+In the update function:
+lower_lim = max(0,frame - 15)
+trajectory1.set_data(trjx[lower_lim:frame+1],...
+trjy[lower_lim:frame+1])
+trajectory1.set_3d_properties(trjz[lower_lim:frame+1])
+trajectory2.set_data(trjx[:frame+1], trjy[:frame+1])
+trajectory2.set_3d_properties(trjz[:frame+1])
+satx = np.zeros(frame+1)
+saty = np.zeros(frame+1)
+satz = np.zeros(frame+1)
+satx[frame] = trjx[frame]
+saty[frame] = trjy[frame]
+satz[frame] = trjz[frame]
+satellite.set_data(satx, saty)
+satellite.set_3d_properties(satz)
+Line 1: Set a max tail length for the tail of the satellite
+Line 2, 3: Update the shape and length of the tail
+Line 4, 5: Update the shape of the orbit
+Line 6-11: Format satellite vector so that it is all zeros and its location
+Line 12,13: Update the location of the satellite with formatted vectors
+Finally, this update function was used via the implementation of the
+matplotlib.animation library:
+
+ani = FuncAnimation(fig, update, frames=len(rs), interval=25,...
+blit=False)
+5. User Inputs: Once the animation was working, now was the time for
+allowing user inputs to affect the simulation. This was done simply by
+modifying the code for the initial ode input to include variables that were to
+be input by the user with the code:
+d = input('Distance from surface of earth (km): ')
+phi = input('Phi (deg): ')
+e = input('Eccentricity (0 - 0.99): ')
+G = 6.6743e-11
+earth_radius = float(input('Radius of Earth (km) [Real:...
+6,378 km]: '))
+earth_mu = G*float(input('Mass of Earth (kg) [Real:...
+5.9722e24 km]: '))
+That would be plugged into the init function to run the code with the
+modified inputs. Which would then, use the Keplerian orbit equations to
+obtain velocity and period:
+
+v = , ,
+
+μ(1+e)
+||r||
+
+a = ||r||(
+1+e
+1−e
+2 ) T = 2π(
+a
+3
+μ
+)
+
+Key Design Decisions
+- Earth-Centered Reference Frame: The simulation assumes that the
+planetary body is the central body, simplifying computations and allowing
+for the visual to be centered on the planet.
+- Dynamic Time Steps: Time steps based on the period of the orbit to ensure
+that the calculation and the animation happen at a reasonable speed:
+tspan = 2*np.pi*np.sqrt(a_ax**3/earth_mu) * 2
+dt = tspan/200
+n_steps = int( np.ceil(tspan/dt) )
+
+Line 1: Calculate the period using the equation for T. ( * 2 for 2 orbits)
+Line 2, 3: Update the step size and number of sets that the solver uses.
+
+- Adjustable Constants: The user can change the values of the mass and
+radius of the planet so that they can get a real feel for how mass and volume
+can affect the shape of the orbit of a satellite.
+- Adjustable Inclination: The user can choose an inclination so that they can
+have the orbit move in any plane they desire
+
+Results
+
+Final Features
+
+1. Input Flexibility: Users can modify key orbital parameters, including:
+- Distance from Earth’s surface.
+- Orbital inclination (phi).
+- Orbital eccentricity.
+- Radius of Planetary Body.
+.
+- Mass of Planetary Body.
+2. 3D Visualization: A dynamic animation that includes:
+- Satellite location and trajectory.
+- Earth has a central body with adjustable proportions.
+- Axis markers for spatial orientation.
+- Legend for satellite visuals
+
+3. Dynamic Scaling: The animation adjusts to accommodate varying orbital
+sizes, maintaining clarity and consistency.
+
+Performance
+The final simulation accurately depicts orbital motion under idealized conditions.
+Computational performance is optimized for real-time visualization on modern
+personal computers.
+(Images included in the Figures section and the end of the document)
+
+Concepts Learned
+Orbital Mechanics
+- Kepler's Laws of Planetary Motion
+- Newtonian gravitation and the two-body problem
+Numerical Methods
+- The use of the scipy library to solve odes.
+- Differential equation solvers, specifically the lsoda algorithm.
+- Optimization of trade-offs between accuracy and computational efficiency
+Programming Techniques
+- Using numpy for vector operations and matrix manipulations
+- 3D plotting using matplotlib.pyplot
+- Creating animations using matplotlib.animation.FuncAnimation
+
+Visualization Design
+- Principles of effective data visualization
+- Balancing aesthetics with technical accuracy
+
+Future Enhancements
+
+Given more time, I would:
+1. Implement atmospheric drag to simulate low Earth orbits more realistically
+2. Include pro-built scenarios for well-known satellites (e.g., ISS).
+.
+3. Implement perturbation effects (e.g., J2).
+.
+4. Include the ability to simulate more complex and dynamic orbits.
+5. Include a time counter for the animation to allow for a better understanding
+of the period of the orbits that are being simulated.
+Overall, despite the limitations due to other classes and a limited semester. The
+outcome of the project is a fairly polished a effective program that allows for the
+simulation of customizable orbits. With a smooth animation that visualizes the
+orbits of the user's specifications.
+
+*OVER TERRIAN VEHICLE*
+Milestone 3: OTV Otters Crash Site Design Blueprint
+Ayra, Aviel, Charlie, Kaviya, Evan, Johnathon, Stone, Matthew
+
+ENES 100: Introduction to Engineering
+
+Mr. Kevin Calabro
+May 15, 2023
+
+Team Contributions:
+Chassis Design Brief Ayra, Aviel
+Mission Design Brief Charlie
+Propulsion Design Brief Stone, Jonathan
+Electronics Design Brief Matt
+Engineering Drawings Evan
+Troubleshooting and Iteration Ayra
+Teamwork and Project Management Kaviya
+
+Design Brief 1: Constructing a Prototype
+To begin construction, we gathered our materials for our chassis which included the
+provided square of acrylic and plywood. Our top plate would be made using the plywood and our
+bottom plate would be made using the acrylic. Then, we set up the laser cutter and imported our
+chassis dimensions which was a 6x7 inch rectangle and we cut out both the base plate and top
+plate from the acrylic and plywood respectively. After this was completed, we marked four
+holes, one hole on each corner of each plate, and drilled into them using the drill press with the
+appropriate drill bit that would allow for the 3D printed standoffs to fit into it.
+
+Figure 1: Chassis base plate
+
+Figure 2: Chassis top plate
+
+After the standoff holes were drilled and we confirmed that they fit, we moved onto
+drilling the holes for the motor mounts and the Arduino mount. For this process, we just needed
+
+to use the acrylic base plate. We lined up each of the motor mounts on the chassis along with the
+Arduino mount to make sure there were a few millimeters of clearance between the motor
+mounts and the Arduino and then we marked the holes for each of the mounts with a hole punch.
+After marking the two front motor mounts with respect to the Arduino mount, we symmetrically
+marked the hole placements for the two back motor mounts. After drilling all the holes on the
+acrylic plate, we screwed in and secured the motors and the Arduino onto the acrylic base plate.
+This step was optional as we were testing if everything fit onto the base plate. Following this
+step, we unscrewed the motor mounts and the Arduino mount from the base plate and took to the
+laser cutter once again. We imported a PDF of a 12x25 millimeter rectangle to make a cut out for
+the servo motor in the base plate and top plate (See Figure 1 & 2 for placements of the
+rectangles). After the rectangles were cut, we then drilled holes for the servo motor mount and
+the LiDAR sensor mount on top plywood plate (See Figure 2 for placement).
+
+Figure 3: Motor prongs and solder (horizontal)
+
+While the numerous holes were being drilled in the base plate and the top plate, the
+electrical sub-group was working on soldering the wires to the motor prongs. For the two motors
+that will be placed next to the Arduino mount, the wires must be soldered perpendicular to the
+prongs (See Figure 3 for clarification) to make sure the motor prongs and the Arduino do not
+touch. The two remaining motors can have their wires soldered on vertically. Following this step,
+the motors were placed back in their motor mounts and the mounts were screwed onto the base
+
+plate. Along with the motors being secured in, the wheels and hub adapter were inserted onto the
+motor shaft for each wheel making the OTV have all four motors and wheels finally attached.
+The construction of the OTV then moves to the electrical sub-group. The Arduino is
+placed in its mount, the wires are then directly connected to the electronics, such as: the motors,
+the Arduino, the two H-bridges, and the battery pack. In Figure 4, the wiring and circuit
+schematic is provided in order to replicate the electrical connections of our OTV.
+
+Figure 4: Circuit schematic
+
+Design Brief 2: Mission Requirements
+Mission Requirements
+● Navigation to within 150mm of wreckage.
+● Determine which face of the wreckage is the red abnormality and transmit the direction
+normal to that face.
+● Place an Aruco marker in the direction of outward normal to the abnormality to ± 20°.
+● Measure and transmit length and height of the abnormality to ± 25mm.
+
+● Navigate past three obstacles to the destination zone.
+
+Broad Mission Challenges
+Our initial thoughts were that the main challenges would arise in the identification and
+measurement of the abnormality, with the navigation being relatively trivial in comparison.
+However, since most of our precision in measurement is based on our navigational precision,
+navigation was an important challenge. Navigation was completely handled using our
+coordinates and heading provided by the vision system, as well as the known location of the
+obstacles and mission site. The challenge in determining which side has the abnormality lies in
+being able to reliably examine each face of the wreckage, and determine a strong presence of
+color. Both identification and measurement require accurate sensors which can be difficult to
+find for this small prototype scale. We initially thought that the placement of the Aruco marker
+would provide some challenges. However, despite being unable to during our final run,
+placement was extremely simple and reliable. The time required for measurement also could
+have provided some issues due to the limited timeframe provided to complete the mission.
+Specific Mission Challenges
+Our first specific mission challenge was with our color identification. Our TCS230 color
+sensor is reliable, but we were unable to use all four of the control pins in order to save space on
+our Arduino ports.
+
+Figure 5: Pinout Diagram for TCS230
+
+Two of the pins, S2 and S3, are used to determine the color being detected, and two others, S0
+and S1, are used for frequency scaling. For the sensor we chose, detecting red required a low
+input to the two control pins, so we were able to avoid wiring S2 and S3. Our chosen frequency
+
+range also only required a high input to one of the two pins, S0. This allowed us to solve our
+issue by only wiring S0.
+Our next specific challenge involved the measurement and Aruco dropping process.
+While both of our processes were able to work reliably when independent of our OTV navigation
+and movement, when placed within any code connected to the vision system everything would
+stop working. We identified a variety of possible issues for this problem. The first was a possible
+conflict between the Arduino servo library and the ENES100 vision system library. We identified
+that the issue stemmed from our use of servos when running full mission tests with the vision
+system. This could’ve been an issue with the interaction with the vision system, or a power
+distribution issue with our Arduino. Unfortunately, we did not have time to fully troubleshoot
+this issue before our final performance, so we were unable to attempt the measurement and
+Aruco dropping during our final run.
+Our final specific challenge was navigation, which was crucial for every aspect of our
+mission. During our initial planning, we failed to emphasize the importance of navigation. In
+reality, it was extremely important to precisely navigate to a specific distance and angle to each
+face of the crash site. We spent a lot of time perfecting our navigation using the vision system
+and a self-correction system while our OTV was moving. This allowed us to navigate to each
+face with a relative aspect of precision. One thing that we were unable to test was the interaction
+with our navigation system and the measurement system. Navigation, specifically heading and
+distance, would drastically affect the accuracy of our measurements and it would have been both
+interesting and challenging to maintain accuracy. Our navigation was precise enough for our
+color identification system, as it was able to function in a range of about 30cm at a variety of
+angles.
+
+Design Choices and Justification
+We made three primary design decisions to accomplish the mission. These are the use of
+a color sensor, a rotating LiDAR sensor, and an Aruco marker held by a servo on the bottom of
+our OTV. The LiDAR sensor was used for measuring the abnormality, and while it was planned
+to operate as a navigation aid, we ended up solely using the vision system which worked well
+and prevented the sensor from drawing extra current. The color sensor was used for identifying
+
+the abnormality. Finally, we had an Aruco marker held on the bottom of our OTV by a servo
+which can be dropped in the proper orientation for our marker placement.
+A color sensor was used to determine which face of the wreckage is the abnormality. By
+mounting the color sensor on the front of the OTV and moving the OTV close to the face, the
+sensor was able to accurately return a high value when the color red is detected. By repeating this
+process for each face until the abnormality was found, we were successful in identifying the side
+with the abnormality with a solid degree of repeatability.
+We initially identified two main approaches for measuring the abnormality. First would
+be using a combination of distance measurements so the OTV can obtain physical measurements
+of the world around it. The other method involved using a camera module and a computer vision
+edge detection algorithm to visually measure the abnormality. Due to the size of the abnormality
+and our lack of time to train a computer vision algorithm, we decided to go in the direction of
+distance sensors. The next decision we would have to make is what type of distance sensor to
+use. We decided to opt for a LiDAR sensor because of the precise measurement accuracy, and
+the tight field of view. The tight 1-2° FOV is crucial in finding each edge of the abnormality
+using only a distance measurement. Using something like an ultrasonic sensor would be almost
+impossible as its wide field of view would create error in our measurements.
+
+Figure 6: Visual Aid of LiDAR scanning and measurement
+
+The figure above provides a simple visual representation of our measurement system. In
+example (a), our sensor will start at an angle clockwise of θ1 and begin to rotate
+counterclockwise. When the distance returned by the sensor suddenly decreases, the OTV will
+
+store the servo angle as θ1
+
+. When the opposite occurs after continued rotation, the OTV will store
+
+the servo angle as θ2
+
+. By using the distance normal to the face of the wreckage, as well as dθ, the
+
+OTV will be able to determine the length of the face.
+Our code required multiple distance measurements for each edge to average out any
+outlier readings. It also measured the initial normal distance and used this reading both for the
+trigonometry to calculate the face length, as well as a normalization factor to eliminate readings
+with extremely high or low values. Normalization processes like these, as well as redundancy in
+measurements allowed us to accurately measure any face of the crash site.
+We could use the process shown in example (b) to obtain the height of the abnormality,
+but this would require an additional servo and a complex mount with multiple degrees of
+freedom. Instead, by combining the length of two adjacent faces, as well as the known
+dimensions of the wreckage, we will be able to determine the size of the face that is the
+abnormality without measuring height.
+Since our process for measuring the faces of the wreckage results in the OTV being
+normal to each face, the placement of the Aruco marker was relatively straightforward. By
+holding our marker in place on the bottom of our chassis with a servo, the OTV will be able to
+actuate the servo when the abnormality is detected, allowing gravity to place the marker on the
+ground. Since our OTV will be normal to the face when this occurs, the marker will fulfill the
+requirement of being ± 20° to outward normal. In practice, our Aruco dropping system was
+extremely reliable and didn’t even require any movement to dislodge the marker.
+
+Mission Structure and Construction
+Each of our three design choices require their own structures for mounting and
+supporting the required sensors.
+
+Figure 7: Front and Side View of Color Sensor and Mount
+
+The figure above is two views from the CAD model for our color sensor and the
+corresponding mount. The color sensor will be on the front of the chassis, mounted to the upper
+deck. The mounting bracket was3D printed and mounted on the chassis with M2 bolts, while the
+sensor was mounted to the bracket with 1mm tap screws.
+
+Figure 8: CAD Image of LiDAR Array
+
+The figure above is a 3D CAD image of our LiDAR Array. It is composed of the
+TFmini-s LiDAR sensor, SG90 micro servo, and a 3D printed mounting bracket. This was
+attached in the upper deck of the chassis, towards the front of the OTV. The servo was mounted
+to the chassis with M2 bolts, and the LiDAR sensor was mounted to the bracket with M2 bolts.
+The bracket was attached to the servo horn using hot glue, and this horn was held on to the servo
+with a friction fit.
+
+Figure 9: Left and Bottom Views of the Aruco Dropping Mechanism
+
+The figure above is the left and bottom views of our Aruco dropping mechanism. We
+used a servo sticking out of the bottom of the bottom chassis plate, using the servo horn and two
+notches coming from the bottom chassis plate to suspend the Aruco marker. The servo is
+mounted with M2 screws, while the notches were 3D printed and mounted with hot glue.
+
+Sensor Placement
+
+Figure 10: 3D Color CAD, Isometric Top and Bottom
+
+The figure above shows a full CAD image of our OTV assembly. You can find the
+LiDAR array and color sensor on the top view, and the Aruco dropping mechanism on the
+bottom view.
+
+Sensor Details
+Our color sensor is the TCS230. It uses three primary pins for 5V power, ground, and a
+digital output. Four additional pins can be used for changing sensitivity and the color being
+detected. These will be hard wired so as to not take up extra digital ports. The sensor uses an
+array of 16 photodiodes with different filters to detect color. No maximum range is specified, but
+the sensor must be very close, within a few centimeters, to accurately detect color. The sensor
+operates at 5V and consumes a maximum of 3mA. The sensor costs around $11.
+Our LiDAR sensor is the TFMini-s. It requires four pins, 5V power, ground, digital TX
+and RX. It operates at 5V and consumes an average of 140mA. It has an operating range of .1m
+to 12m, and an accuracy of ±6cm. It has a field of view of 2° and an adjustable frame rate of
+1-1000Hz. It weighs 5g and costs $40.
+The servos we are using are 9g SG90 servos. They require three pins, 5V power, ground,
+and a digital pin wired to a PWM port. It can rotate 180° and provide a torque of 2.5kg-cm. The
+servos will draw ~10mA idle and ~100-150mA while rotating.
+
+Control Algorithm Flowchart
+
+Design Brief 3: Propulsion Design Brief
+The OTV is tasked with maneuvering around obstacles while fulfilling mission objectives
+within five minutes. Thus, our propulsion design must firstly take into account the force of
+rolling resistance. Besides this, the team must identify the abnormality and position the Aruco
+marker within target boundaries, navigating to the end zone when successful. Our solution for
+obstacle navigation is to avoid the obstacles entirely, aided by the small form factor of our OTV,
+threading our way between anything in its way. Such delicate positioning necessitates fine motor
+control.
+After working with the chassis team and coming to the conclusion that we want to make
+our vehicle compact, we settled on ‘skinny’ 67 mm diameter wheels powered by 4 motors. With
+sufficiently powerful motors, we projected that this design would meet all of our main navigation
+requirements. For our final OTV configuration we use a 4-wheel drive system with a motor for
+each wheel along with H-bridge motor controllers to be able to control the direction of each
+motor pair along the left and right sides of the vehicle respectively.
+Figure 11: Wheel of Choice
+
+The team picked POLOLU 20Dx44L motors since they are relatively inexpensive motors
+that fit the small size criteria for our OTV. They are also powerful and consistent enough to
+eliminate any concerns of stalling, slipping or burning out. Additionally, the H-bridge
+configuration will enable the OTV to go in reverse should the need arise.
+For our motor torque calculations we factored in a worst case weight of 1kg based on
+projected combined weight from the BOM, and a worst case rolling resistance coefficient of 0.02
+from our prior calculations. The rolling resistance is then:
+
+F = 1kg * 9. 8N/m of friction. 2
+
+* 0. 02 = 0. 196N
+
+Across a 4-wheel drive it follows that each motor is responsible for 0.049N of friction. Thus the
+torque required to overcome rolling resistance per motor is
+
+t = F * r = 0. 049 N * 0. 0254 m = 0. 0012 N * m.
+As each motor stalls at 0.52 N*m, our team has more than enough torque.
+Our goal for OTV Speed: As calculated prior in Milestone 1, our goal for the angular velocity is
+114 RPM, or a linear velocity of 0.302 m/s. One characteristic we noticed is that the operating
+torque is 0.22 N*m, or an operating linear velocity of >0.381 m/s at max power.
+
+Figure 12: Free Body Diagram
+
+Figure 13: Motor Data Sheet
+
+The expected operating point(s) on the data sheet when not maneuvering, turning or
+avoiding obstacles and strictly moving forward is described by the line passing through the green
+point marked maximum efficiency, only dependent on current draw as rolling resistance is
+negligible. This is an approximate operating torque of ~10 kg*mm, or 0.1 N/m @ max
+efficiency.
+Similarly for the expected operating linear speed when not maneuvering, turning, or
+avoiding obstacles, the linear speed approaches the maximum operating RPM of the motor as
+rolling resistance is negligible. Thus the expected average angular velocity is approximately 6pi
+radians per second or 140 rpm @ max efficiency, or an average linear velocity of about 0.6 m/s
+with 2in(5cm). diameter wheels. Maneuvering of any sort is expected to drastically lower this
+estimation. Additionally, the expected operating current for each motor ranges from 150mA at no
+load, to approximately 2.9 amp at stall. Operating currents are expected to range between these
+two extremes when executing mission objectives, with an average operating current of close to
+0.6A @ max efficiency.
+Live Testing
+The first issue immediately encountered when testing commenced was a noticeable
+difference in the angular velocities of the left and right motor pairs, the net result being that the
+OTV would consistently turn at an angle. A followup examination found that its trajectory would
+roughly follow a circular arc with a radius of 1.3 meters, potentially a significant issue.
+Our team measured the current draw per motor under load to be around 0.25 A, which on
+the motor data graph corresponds to an operating torque of about 1.5 kg*mm, or 0.01 N*m. This
+is an order of magnitude less torque than expected; clearly, even the weight of the vehicle is
+negligible as the motor is operating at close to no-load efficiency.
+After extensive rounds of testing the team determined that the issue was that one of the
+motors was slower than expected and could not be optimized no matter what we tried. The
+simple workaround was to limit the output of the other three motors to match the suboptimal
+velocity of the fourth. The new current draw per motor under load was measured to be ~0.25 A,
+which corresponds to an operating torque of around 0.01 N*m. This is similar to our initial
+readings, confirming that the motor was indeed the issue.
+
+The linear speed of the OTV was measured to be ~1 ft/sec, or ~0.3 m/s. This corresponds
+to an angular velocity of ~4*pi radians per second, or 120 rpm. This is not expected to impact the
+completion of navigation objectives significantly.
+In conclusion, despite significant setbacks in the development and optimization of motors
+in the propulsion modeling process, the motors managed a satisfactory performance in its
+operating linear velocity throughout, and all navigation objectives were successfully completed.
+
+Design Brief 4: Electronics
+Battery
+Our Over Terrain Vehicle (OTV) will be powered by five, 1.2 volt, Tenergy NiMH AA
+batteries. When wired in series these batteries will supply six volts of power to the OTV. The
+decision to supply six volts to the vehicle was based on the voltage draw of our motors, which
+was reported by the manufacturer as six volts. Our decision to wire AA batteries in series
+ourselves, rather than acquiring a manufactured 6V battery, was based on the fact that Tenergy
+AA batteries are rechargeable. This allows us to swap batteries in between uses and ensure that
+the OTV is being powered by a fully charged battery. Also, because we purchased a pack of 12
+AA batteries, we had the ability to add or remove batteries to add or remove voltage, if need be.
+The battery capacity of the Tenergy AA batteries is 2500 mAh. When choosing a power
+source, one of our biggest concerns was ensuring that the battery capacity would be enough to
+fully power our OTV. According to our motor’s data sheet, the motor runs at max efficiency at
+630 mA. Thus four motors running at max efficiency draws just over 2500 mA (2520 mA). This
+proved that we needed a high capacity battery, ideally one very close to the value of the current
+draw of our motors. These constraints were met by the Tenergy AA batteries due to their high
+capacity.
+Due to changes in our design and more accurate current draw readings, we can now more
+accurately assess the performance of our power supply. Analysis of our OTV found that the
+current draw of each motor was closer to 250 mA (this finding is explained in the following
+section) leading to a total current draw of 1595 mA.
+
+%Draw = = = 63.8% (1) Maximum Current Draw
+
+Battery Capacity
+
+1595 mAh
+2500 mAh
+
+By using equation 1 we were able to come to the conclusion that our OTV will draw
+around 63.8% of the battery’s current during operation. Using this number we were able to
+determine our expected discharge rate by analyzing the discharge of AA NiMH batteries by
+using the chart below.
+
+Figure 14: Discharge Rate of AA NiMH Batteries
+
+To use this chart (provided by energizer), we must first take the percentage we calculated
+in equation one and use it to plot along the chart. The vertical axis shows the voltage that will be
+supplied by the individual battery, and the horizontal axis shows the percentage of the battery’s
+life that has been discharged (that is a brand new battery will have discharged 0% of its
+capacity). The pictured lines correspond to current draw percentages, where 1C shows the
+voltage output at 100% current draw, 0.2C shows the voltage output at 20% current draw, and 2C
+shows the voltage output at 200% current draw. The 63.8% current draw we calculated would
+correspond to a line of 0.638C, falling somewhere in between the 1C and 0.2C lines. This shows
+
+that each battery within our power supply will provide around 1.2 volts, with an output dropoff
+when ~90% of the capacity has been discharged.
+
+Current Draw
+
+In order to calculate the current draw of the OTV, we needed to find the current draw of
+the motors during operation. To do this, we connected the OTV to a power supply and measured
+current draw when motors were running at full power, as well as when the vehicle was stationary.
+We found that the stationary vehicle drew 0.2 Amps, while the running vehicle drew 1 Amp.
+
+IMotors = ITotal - IStationary = 1A - 0.2A = 0.8A (2)
+
+Using equation 2, we were able to conclude that the four motors draw 0.8 A when
+running. We were then able to calculate the current draw for each of the four motors.
+
+Ieach motor = Imotors / [num of motors] = 0.8A / 4 motors = 0.2A (3)
+
+Considering that the batteries were not on the OTV (affecting the mass) during testing,
+we increased the expected current draw for each motor to 0.25A. This increase over the tested
+value was to account for any components missing from the OTV during testing. It also allowed
+us to be sure that we did not underestimate the power draw of the motors, as not providing
+enough power to the motors would prevent the OTV from accomplishing its tasks. For the servos
+and the sensors, the current draw was supplied by the manufacturer, and we were able to find an
+exact value without calculations.
+
+Component Supply Current (mA)
+Motor (running) ~250
+Servo (running) 175
+Servo (idle) 10
+
+LiDar Sensor 140
+Color Sensor 25
+Wifi Module 80
+
+Using these numbers, we were able to calculate the maximum current draw of our OTV:
+
+Itotal = ∑(IComponents* [num of components]) = (250 mA * 4 motors) + (175 mA * 2 servos) + 140
+mA Lidar sensor + 25 mA Color sensor + 80 mA Wifi module = 1595 mA (4)
+
+Run-time
+
+Using this current draw we calculated the run-time:
+
+Run Time = (5) Battery Capacity
+
+Maximum Current Draw =
+
+2500 mAh
+1595 mAh = 1. 567 hours of run time
+
+Power Modulation and Actuator Control
+
+Our motors are controlled by two L298N DC Motor Drivers, with each driver controlling
+two motors. These drivers are able to control the speed and direction of two motors each. In our
+OTV, each motor driver controls one side of the vehicle. This allows us to move the right and left
+sides of our vehicle separately.
+Each L298N requires four inputs - two for each motor - with each input being connected
+to an Arduino digital port. There are an additional two ports on each motor controller that
+connect to Pulse-Width Modulation (PWM) digital ports on the Arduino. By varying the PWM
+inputs provided to the motor controllers, we are able to manually slow down individual motors,
+allowing us to ensure that each motor spins at the same speed.
+
+With the right and left side of the OTV able to move independently of each other, we are
+able to move forward, move backward, turn clockwise and turn counterclockwise by changing
+the Arduino outputs.
+
+Circuit Schematic
+
+Pin Assignment
+
+Pin Component
+0 L298N (1) - IN2 & IN3
+1 L298N (1) - IN1 & IN4
+2 L298N (2) - IN2 & IN4
+3 L298N (1) - ENA
+
+4 L298N (2) - IN1 & IN3
+5 Servo (1)
+6 Servo (2)
+7 Color Sensor
+8 Lidar
+9 L298N (2) - ENA
+10 L298N (1) - ENB
+11 Lidar
+12 Wifi Module - TX
+13 Wifi Module - RX
+A0 Color Sensor
+
+Design Brief 5: Compiled Engineering Drawings
+
+Figure 15 : 3D Color-CAD Image of OTV with Labeled Parts
+
+Figure 16: Engineering Drawing with Three Main Dimensions Labeled
+
+Figure 17: Exploded View of Components
+
+Figure 18: Motor Mount
+
+Figure 19: Chassis Stand-offs
+
+Figure 20: Color Sensor Mount
+
+Figure 21: Lidar Sensor Mount
+
+Figure 22: Chassis Top Plate
+
+Figure 23: Chassis Bottom Plate
+
+Figure 24: Electronics Holder
+
+Figure 25: Wheel Hub Linkage
+
+Figure 26: Aruco Dropping Ramp
+
+Design Brief 6: Troubleshooting and Iteration
+The compact design of our OTV presented a few unexpected challenges during the
+development and building phases. One of the problems we encountered involved the soldered
+wires on the motors, which proved to be too close to the Arduino and other internal components.
+We had to carefully map out the available space for all the internal components to ensure that
+they would fit and function properly within the small build of the OTV.
+To address the problem with the motor wires, we had to desolder them and then cut new
+wires to re-solder them perpendicularly. However, during this process, we found that the motor
+mount would not fit, so we had to desolder the wires once again. This process continued two
+more times as we struggled to melt the solder on top of the motor prongs. The entire process was
+discouraging, especially since we had initially planned to finish the hardware aspects before
+focusing entirely on the software.
+The delays caused by this issue also impacted other sub-teams, including the electrical
+and propulsion sub-teams, who were unable to make progress while waiting for the motors to be
+properly connected. Despite the frustration, the challenge presented an opportunity for everyone
+to work collaboratively on a single issue, reinforcing our sense of teamwork and shared purpose.
+
+Through trial and error, we eventually found a solution and were able to solder the wires
+onto the motor prongs. The rest of the construction of our OTV proceeded smoothly after this
+unexpected setback. This experience taught us that progress is not always linear and that
+troubleshooting is a normal part of the engineering design process.
+As a team, we learned the importance of careful planning and problem-solving skills
+when dealing with unexpected issues. We also developed a greater appreciation for the iterative
+nature of the engineering design process and the need to remain flexible and open-minded when
+faced with unexpected challenges.
+In the end, our small and compact OTV proved to be a successful project, and we were
+proud of the work we had accomplished as a team. While we encountered a few unexpected
+challenges along the way, we ultimately emerged stronger and better equipped to tackle future
+projects with confidence and skill.
+
+Design Brief 7: Team’s Performance and Product’s Performance
+Throughout the development of our OTV, the different techniques we employed to
+enhance our team's performance played a significant role in determining the success of the OTV.
+Our team efficiently split into three subgroups at the beginning of the project during the design
+phase based on interest and experience. We all decided at the beginning that we would split into
+groups based on what we wanted to get more experience in or what interested us the most
+because the ultimate goal of the OTV project was to learn something new. But by also
+establishing which members already had experience in other fields, subgroups could call upon
+other expert members to help them if needed. Each member wrote down what we had experience
+with and what we wanted to gain more experience in. Luckily there was a relatively even
+distribution of members who wanted to be in the different groups, so there was not too much
+downtime before we could dive right into beginning to make headway on the actual project.
+Splitting into groups allowed us to work simultaneously on different aspects of the OTV, such as
+the chassis, coding, electronics, and propulsion, which meant we could move forward with the
+development process quickly.
+Within each subgroup, there was effective collaboration to complete each milestone in a
+comprehensive yet timely manner. For example, for the design presentations and the design
+blueprint, each group worked on their section of the report or slides of the project to ensure a
+
+high level of detail and specialization while planning for building a high-quality product.
+However, we also made sure to collaborate effectively as an entire team, with every subgroup
+giving their input for team decisions such as deadlines, mission goals, and overall OTV design.
+All the subgroups would also frequently share the progress they had made so that all members of
+the entire team could have a general understanding of what was occurring within each subgroup
+and ensure complete transparency within the team. Each subgroup was also encouraged to give
+input to other subgroups as needed because we understood that in a collaborative process like
+this, having as many ideas as possible before diverging on a few would result in the most robust
+final design for the OTV.
+For example, because our OTV design intention was to be very small, the electronics subgroup
+had to collaborate with the chassis subgroup to ensure there would be enough space on the
+chassis for each of the electronic components without compromising on the small size of the
+OTV.
+Despite the benefits and expertise afforded by each subgroup working independently, if
+another subgroup needed help, we were quick to offer support, which helped to ensure that the
+project remained on track. This was more important during the build phase than the planning
+phase because the more practical and hands-on nature of the build phase brought unexpected
+issues and problems that even the knowledge garnered during the planning phase by each
+subgroup would not be enough for the individual subgroup to figure out and sometimes the
+brainstorming of the entire team was required to solve the issue. We recognized that we were all
+working towards a common goal, and that success depended on the performance of the entire
+team, not just individual subgroups.
+With this emphasis on efficiency, collaboration, and an overall desire for learning, our
+team created a final OTV that met the design and performance goals we set forward.
+
+Design Brief 7: What was the biggest flaw in your team organization?
+The biggest flaw in our team's organization was the lack of coordination and integration
+during the build phase of our OTV design. Our focus was to design a product that was small
+enough to avoid obstacles, but we did not account for the fact that multiple subgroups would
+need to work on the product at once, especially during the end of the build phase. This was not a
+significant issue during the initial stages of the project when each group was starting their
+
+infrastructure. For example, the chassis group worked on laser cutting the different pieces of
+acrylic and wood needed to assemble the structure of the OTV. The electronics group mapped
+out the wiring and the arduino pins needed through TinkerCad, and once the group had access to
+the breadboard started creating physical wiring patterns. The programming team tested the code
+to see if it would work with the various sensors for the OTV.
+By using visual online programs, we could all simultaneously make progress on the
+assembly of the OTV, even if it wasn't on the actual physical OTV. However, once the general
+schematics and virtual assemblies were finished and the physical product had to be built, it was
+impossible for all subgroups to work on the small OTV simultaneously. This became a
+significant problem later when components needed to be assembled and reiterations needed to be
+done.
+This lack of coordination and integration caused delays in the project as one subgroup
+would need to wait for another subgroup to finish working on their part of the product before
+they could start fixing their own problems. For instance, the navigation group needed to use the
+OTV to test their sensors, but the chassis group needed to assemble the structure first. Similarly,
+the electronics group needed to test the motors, but the chassis group needed to mount the motors
+onto the baseplate.
+Theoretically we could have circumvented these delays in coordination and integration
+by better planning between the subgroups by better implementing several strategies, such as
+being more active with project management techniques. However, we did have regular meetings
+where all subteams updated the rest of the team on their progress and every class period we
+would all be working together and aware of what the other groups were actively doing. We also
+had a Trello board where we listed each subgroup's tasks for the entire team to see. The reality of
+the situation was that we could not predict when something would go wrong with one of the
+subgroup's assignments, so we couldn't prevent the bottlenecks that prevented other subgroups
+working that arose with that.
+However, because we were given multiple milestones to complete at once, when a
+specific subgroup would spend a lot of time with the physical OTV for testing or reiterating, the
+other groups would try to make progress on the other milestones while waiting. For example,
+while the electronics group was finalizing connections that had fallen out and prevented
+
+complete testing of the OTV, the other subgroups started brainstorming and working on the
+writing for Milestone 9.
+Bill of Materials:
+
+Component Quantity
+
+Manufacture
+r Vendor Description
+
+Mass
+(g) Cost ($) Date of Purchase
+
+Wheel 4 Solarbotics
+
+Robotsho
+p
+
+2-5/8" (67mm) black
+plastic wheels 34.0194 13 3/13/23
+
+Motor 4 Pololu Pololu
+
+6V 100:1 Metal
+Gearmotor 184 115.8 3/13/23
+Servo Motor 1 TiankongRC Amazon Small 180 degree servo 18 9.68 3/13/23
+
+Color Sensor 1
+
+Teyleten
+Robot Amazon
+
+Can detect combinations
+of primary colors 17.86 11.99 3/13/23
+
+Kill Switch 1
+
+Sparkfun
+Electronics
+
+Robotsho
+p
+
+Switch that can instantly
+kill the circuit 0.28 1.05 3/13/23
+
+rechargeable
+AA batteries 1 Tenergy Amazon
+
+Rechargeable 1.2 volt
+batteries 150 16.14 3/13/23
+
+Arduino Uno 1 Arduino Class
+
+Computer that will
+power the circuit 25 0 3/13/23
+Lidar Sensor 1 MakerFocus Amazon Range detecting sensor 5.67 39.99 3/13/23
+Battery
+Charger 1 Tenergy Amazon
+
+Recharges the AA
+batteries between uses 0 17.99 3/13/23
+
+Chassis
+Material 1 HomeDepot
+
+HomeDep
+ot
+
+24x24 in sheet of acrylic
+for the chassis 1000 19.99 N/A
+
+L298N
+Motor
+Controller 2 Qunqi Amazon
+
+Motor Controller able to
+power two DC motors
+
+63.5029
+4 13.98 3/13/23
+
+5 Cell AA
+Battery
+Holder 1 Generic Amazon
+
+Holds 5 AA batteries
+and connects them in
+series N/A 5.99 3/13/23
+
+Works Cited
+
+1. Akbari, Written by Mohammadreza. “TCS230 Sensor Color Recognition w/ Arduino
+Calibration Code Included.” Electropeak, 15 Nov. 2021,
+electropeak.com/learn/arduino-color-recognition-w-tcs230-sensor/.
+2. Raj, Thinal, et al. “A Survey on Lidar Scanning Mechanisms.” MDPI, Multidisciplinary
+Digital Publishing Institute, 30 Apr. 2020, https://www.mdpi.com/2079-9292/9/5/741#.
+
+** PROJECT LINKS **
+* Orbital Dynamics Sim *
+https://drive.google.com/file/d/1KOO35DLzhSj13IlOl3cTN5tELYgO6Hiu/view?usp=drive_link
+https://drive.google.com/file/d/1QWPn0wSNayttvF0N7eO0u3QSoNSumPNT/view?usp=drive_link
+https://drive.google.com/file/d/1OdsLCqkPiPniH85HCu-Td4gqlI02Y6Xz/view?usp=drive_link
+
+* Over Terrain Vehicle *
+https://drive.google.com/file/d/1Qn49OKPRjvdQsY2P2Qvhmdp_iH6GAXz6/view?usp=drive_link
+https://drive.google.com/file/d/1CCMnxfJ9eXCSWJeDqCUpdgDxpQ3YvSkq/view?usp=drive_link
