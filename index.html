@@ -10,6 +10,8 @@
     <meta property="og:description" content="Aerospace engineering projects, experience, and skills." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://avielzuri.github.io" />
+    <meta name="theme-color" content="#0b0d12" />
+    <link rel="canonical" href="https://avielzuri.github.io/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,20 +21,24 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>A</text></svg>">
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" role="banner">
       <nav class="nav container" aria-label="Primary">
         <a class="brand" href="#home" aria-label="Go to top">AZ</a>
         <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
         <ul id="nav-list" class="nav-list">
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="print-resume" class="btn print-btn" title="Print resume (PDF)">Print resume</button>
       </nav>
     </header>
 
-    <main id="home" class="main">
+    <main id="main" class="main" tabindex="-1">
       <section class="hero container">
         <div class="hero-content">
           <h1>Aviel Zuri‑Shaday</h1>
@@ -43,6 +49,13 @@
             <a class="btn" href="#contact">Get in touch</a>
           </div>
         </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p>
+          Aerospace engineering student focused on simulation, controls, and mechatronics. I combine rigorous analysis with hands‑on build experience — evidenced by a 3.966 GPA, research in EEG‑driven control with haptics, and leading an autonomous rover team. I aim to contribute to flight software, autonomy, and simulation tooling.
+        </p>
       </section>
 
       <section id="projects" class="section container">
@@ -152,6 +165,28 @@
         </div>
       </section>
 
+      <section id="education" class="section container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <article class="item">
+            <header>
+              <h3>University of Maryland, A. James Clark School of Engineering</h3>
+              <div class="meta">B.S. Aerospace Engineering • GPA 3.966 • Expected May 2026</div>
+            </header>
+            <ul>
+              <li>Dean’s List: Freshman, Sophomore, and Junior years</li>
+              <li>Relevant courses: Aerodynamics, Dynamics, Differential Equations, Aerospace Systems, C++/MATLAB, Python</li>
+            </ul>
+          </article>
+          <article class="item">
+            <header>
+              <h3>Bar Ilan University</h3>
+              <div class="meta">Gap Year Study Abroad • 30+ Credits • Oct 2021 — Jun 2022</div>
+            </header>
+          </article>
+        </div>
+      </section>
+
       <section id="skills" class="section container">
         <h2>Skills</h2>
         <div class="skills">
@@ -166,6 +201,42 @@
           <div>
             <h3>Languages</h3>
             <p>Hebrew (Native), Spanish (Basic)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Printable resume section -->
+      <section id="resume" class="section container resume">
+        <h2 class="print-only">Aviel Zuri‑Shaday — Resume</h2>
+        <div class="resume-header print-only">
+          <div><strong>Phone:</strong> 347‑241‑7945</div>
+          <div><strong>Email:</strong> avielzurishaday@gmail.com</div>
+          <div><strong>Location:</strong> Queens, NY</div>
+          <div><strong>LinkedIn:</strong> /in/aviel-zuri-shaday</div>
+          <div><strong>Portfolio:</strong> avielzuri.github.io</div>
+        </div>
+        <div class="resume-grid print-only">
+          <div>
+            <h3>Education</h3>
+            <p>University of Maryland — B.S. Aerospace Engineering — GPA 3.966 — May 2026</p>
+            <p>Bar Ilan University — Gap Year — 30+ Credits — 2021–2022</p>
+          </div>
+          <div>
+            <h3>Experience</h3>
+            <p>XR Flight Simulation and Control Lab — Undergraduate Research Assistant — 2024–Present</p>
+            <ul>
+              <li>EEG pipeline (NumPy, SciPy), Welch PSD, STFT; haptics integrations; −70% latency</li>
+            </ul>
+            <p>Gotham Air — HVAC Technician — Summer 2024</p>
+          </div>
+          <div>
+            <h3>Projects</h3>
+            <p>Orbital Dynamics Simulator — Python, SciPy ODE, Matplotlib 3D</p>
+            <p>Over Terrain Vehicle (OTV) — Arduino C++, LiDAR, sensors, systems integration</p>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <p>Python, C++, MATLAB, NumPy, SciPy, Matplotlib, Arduino, Fusion 360, SolidWorks; Hebrew (Native), Spanish (Basic)</p>
           </div>
         </div>
       </section>
@@ -199,6 +270,35 @@
       <div class="lightbox-strip" id="lightbox-strip" role="list"></div>
     </dialog>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aviel Zuri-Shaday",
+        "url": "https://avielzuri.github.io/",
+        "email": "mailto:avielzurishaday@gmail.com",
+        "telephone": "+1-347-241-7945",
+        "address": {"@type": "PostalAddress", "addressLocality": "Queens", "addressRegion": "NY", "addressCountry": "US"},
+        "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Maryland"},
+        "sameAs": [
+          "https://www.linkedin.com/in/aviel-zuri-shaday"
+        ],
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "Orbital Dynamics Simulator",
+            "url": "https://drive.google.com/file/d/1KOO35DLzhSj13IlOl3cTN5tELYgO6Hiu/view?usp=drive_link",
+            "description": "Python-based orbital simulator using SciPy ODE solvers and Matplotlib 3D animation"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Over Terrain Vehicle (OTV)",
+            "url": "https://drive.google.com/file/d/1Qn49OKPRjvdQsY2P2Qvhmdp_iH6GAXz6/view?usp=drive_link",
+            "description": "Autonomous rover integrating LiDAR, color sensor, servo actuation, and Arduino C++ navigation"
+          }
+        ]
+      }
+    </script>
     <script src="assets/script.js" defer></script>
   </body>
   </html>

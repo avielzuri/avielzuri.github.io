@@ -12,6 +12,13 @@ if (navToggle && navList) {
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Print resume button
+document.getElementById('print-resume')?.addEventListener('click', () => {
+  // Scroll resume section into view on screen; printing will use print CSS
+  document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' });
+  setTimeout(() => window.print(), 350);
+});
+
 // Simple lightbox for galleries
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-image');
