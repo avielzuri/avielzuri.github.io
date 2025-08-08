@@ -1,11 +1,10 @@
 
-The main goal for this site is to showcase personal and professional projects. To start out, it will not have too many projects, but as time goes on it will include more projects over time.
-
-To start out, V1 of the site will be basic, a placeholder, so I can use it for now as I work on a more polished version over time.
+The main goal for this site is to showcase personal and professional projects. It should be usable on desktop and mobile. Your task is to make this as aetheticly pleasing as possible.
+The site should represent me an a light that would encourage companies to hire me. Use good tactical desicitions in the thought process of designing the website,
 
 Resume:
 Aviel Zuri-Shaday
-347-241-7945 ― Queens, NY ― avielzurishaday@gmail.com ― in/aviel-zuri-shaday ― Portfolio
+Queens, NY ― avielzurishaday@gmail.com ― in/aviel-zuri-shaday ― Portfolio
 
 Education
 University of Maryland A. James Clark School of Engineering GPA: 3.966

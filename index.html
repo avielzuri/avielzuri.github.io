@@ -10,31 +10,42 @@
     <meta property="og:description" content="Aerospace engineering projects, experience, and skills." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://avielzuri.github.io" />
+    <meta property="og:image" content="images/social-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aviel Zuri‑Shaday • Portfolio" />
+    <meta name="twitter:description" content="Aerospace engineering projects, experience, and skills." />
+    <meta name="twitter:image" content="images/social-cover.svg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="mask-icon" href="favicon.svg" color="#0b0d12" />
+    <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#0b0d12" />
+    <meta name="color-scheme" content="dark light" />
     <link rel="canonical" href="https://avielzuri.github.io/" />
+    <link rel="prefetch" href="pdf/Aviel_Resume_2025.pdf" as="document" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/styles.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>A</text></svg>">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" role="banner">
       <nav class="nav container" aria-label="Primary">
-        <a class="brand" href="#home" aria-label="Go to top">AZ</a>
-        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
-        <ul id="nav-list" class="nav-list">
+        <a class="brand" href="#main" aria-label="Go to top">AZ</a>
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list" aria-hidden="true">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="pdf/Aviel_Resume_2025.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf" aria-label="Open resume PDF in a new tab">Resume (PDF)</a></li>
         </ul>
-        <button id="print-resume" class="btn print-btn" title="Print resume (PDF)">Print resume</button>
+        <button id="theme-toggle" class="btn print-btn" type="button" title="Toggle theme">Toggle theme</button>
+        <button id="print-resume" class="btn print-btn" type="button" title="Print resume (PDF)">Print resume</button>
       </nav>
     </header>
 
@@ -44,11 +55,31 @@
           <h1>Aviel Zuri‑Shaday</h1>
           <p class="subtitle">Aerospace Engineering @ UMD · GPA 3.966</p>
           <p class="tagline">I design, build, and program systems that move — from orbital simulators to autonomous ground vehicles.</p>
+          <p class="mission">Targeting roles in flight software, autonomy, and simulation tooling.</p>
           <div class="cta">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn" href="pdf/Aviel_Resume_2025.pdf" target="_blank" rel="noopener" type="application/pdf" download>Download Resume</a>
           </div>
         </div>
+      </section>
+
+      <section id="highlights" class="section container">
+        <h2>Highlights</h2>
+        <ul class="highlights" role="list">
+          <li class="highlight">
+            <span class="highlight-kpi">3.966</span>
+            <span class="label">GPA — Aerospace Engineering</span>
+          </li>
+          <li class="highlight">
+            <span class="highlight-kpi">−70%</span>
+            <span class="label">Latency reduction in haptic feedback systems</span>
+          </li>
+          <li class="highlight">
+            <span class="highlight-kpi">Top 19/70</span>
+            <span class="label">OTV team selected for showcase</span>
+          </li>
+        </ul>
       </section>
 
       <section id="about" class="section container">
@@ -64,8 +95,8 @@
           <!-- Orbital Dynamics Simulator -->
           <article class="card">
             <div class="media">
-              <button class="thumb" data-gallery="orbit" aria-label="Open Orbit Dyn. Sim gallery">
-                <img src="images/OrbitDynSim/Image1.png" alt="Orbital Dynamics Simulator visualization 1" loading="lazy" />
+              <button class="thumb" type="button" data-gallery="orbit" aria-label="Open Orbit Dyn. Sim gallery">
+                <img src="images/OrbitDynSim/Image1.png" alt="Orbital Dynamics Simulator visualization 1" loading="lazy" decoding="async" fetchpriority="low" width="1280" height="720" sizes="(max-width: 920px) 100vw, 50vw" />
               </button>
             </div>
             <div class="card-body">
@@ -78,9 +109,10 @@
                 <li>Matplotlib</li>
               </ul>
               <div class="links">
-                <a class="link" href="https://drive.google.com/file/d/1KOO35DLzhSj13IlOl3cTN5tELYgO6Hiu/view?usp=drive_link" target="_blank" rel="noopener">User Manual</a>
-                <a class="link" href="https://drive.google.com/file/d/1QWPn0wSNayttvF0N7eO0u3QSoNSumPNT/view?usp=drive_link" target="_blank" rel="noopener">Documentation</a>
-                <a class="link" href="https://drive.google.com/file/d/1OdsLCqkPiPniH85HCu-Td4gqlI02Y6Xz/view?usp=drive_link" target="_blank" rel="noopener">Design Write‑up</a>
+                <a class="link" href="https://drive.google.com/file/d/1KOO35DLzhSj13IlOl3cTN5tELYgO6Hiu/view?usp=drive_link" target="_blank" rel="noopener noreferrer">User Manual</a>
+                <a class="link" href="https://drive.google.com/file/d/1QWPn0wSNayttvF0N7eO0u3QSoNSumPNT/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Documentation</a>
+                <a class="link" href="https://drive.google.com/file/d/1OdsLCqkPiPniH85HCu-Td4gqlI02Y6Xz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Design Write‑up</a>
+                <button class="btn open-modal" data-target="#modal-orbit" type="button">Details</button>
               </div>
             </div>
           </article>
@@ -88,7 +120,7 @@
           <!-- Over Terrain Vehicle -->
           <article class="card">
             <div class="media video">
-              <video controls preload="metadata" poster="images/OTV/CADFront.png">
+              <video controls preload="none" poster="images/OTV/CADFront.png" width="1280" height="720" controlsList="nodownload">
                 <source src="videos/OTV/OTV_in_Action.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -103,24 +135,29 @@
                 <li>Systems Integration</li>
               </ul>
               <div class="thumb-row">
-                <button class="thumb" data-gallery="otv" aria-label="Open OTV gallery">
-                  <img src="images/OTV/CADBottom.png" alt="OTV CAD bottom" loading="lazy" />
+                <button class="thumb" type="button" data-gallery="otv" aria-label="Open OTV gallery">
+                  <img src="images/OTV/CADBottom.png" alt="OTV CAD bottom" loading="lazy" decoding="async" fetchpriority="low" width="600" height="338" sizes="(max-width: 920px) 33vw, 200px" />
                 </button>
-                <button class="thumb" data-gallery="otv" aria-label="Open OTV gallery">
-                  <img src="images/OTV/EngSchematic.png" alt="OTV schematic" loading="lazy" />
+                <button class="thumb" type="button" data-gallery="otv" aria-label="Open OTV gallery">
+                  <img src="images/OTV/EngSchematic.png" alt="OTV schematic" loading="lazy" decoding="async" fetchpriority="low" width="600" height="338" sizes="(max-width: 920px) 33vw, 200px" />
                 </button>
-                <button class="thumb" data-gallery="otv" aria-label="Open OTV gallery">
-                  <img src="images/OTV/Wiring.jpg" alt="OTV wiring" loading="lazy" />
+                <button class="thumb" type="button" data-gallery="otv" aria-label="Open OTV gallery">
+                  <img src="images/OTV/Wiring.jpg" alt="OTV wiring" loading="lazy" decoding="async" fetchpriority="low" width="600" height="338" sizes="(max-width: 920px) 33vw, 200px" />
                 </button>
               </div>
               <div class="links">
-                <a class="link" href="https://drive.google.com/file/d/1Qn49OKPRjvdQsY2P2Qvhmdp_iH6GAXz6/view?usp=drive_link" target="_blank" rel="noopener">Design Blueprint</a>
-                <a class="link" href="https://drive.google.com/file/d/1CCMnxfJ9eXCSWJeDqCUpdgDxpQ3YvSkq/view?usp=drive_link" target="_blank" rel="noopener">Report</a>
+                <a class="link" href="https://drive.google.com/file/d/1Qn49OKPRjvdQsY2P2Qvhmdp_iH6GAXz6/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Design Blueprint</a>
+                <a class="link" href="https://drive.google.com/file/d/1CCMnxfJ9eXCSWJeDqCUpdgDxpQ3YvSkq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Report</a>
+                <button class="btn open-modal" data-target="#modal-otv" type="button">Details</button>
               </div>
             </div>
           </article>
         </div>
       </section>
+      <div class="container cta-inline">
+        <a class="btn primary" href="#contact">Contact Me</a>
+        <a class="btn" href="pdf/Aviel_Resume_2025.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf" download>Resume (PDF)</a>
+      </div>
 
       <section id="experience" class="section container">
         <h2>Experience</h2>
@@ -209,7 +246,7 @@
       <section id="resume" class="section container resume">
         <h2 class="print-only">Aviel Zuri‑Shaday — Resume</h2>
         <div class="resume-header print-only">
-          <div><strong>Phone:</strong> 347‑241‑7945</div>
+          <!-- Phone removed by request -->
           <div><strong>Email:</strong> avielzurishaday@gmail.com</div>
           <div><strong>Location:</strong> Queens, NY</div>
           <div><strong>LinkedIn:</strong> /in/aviel-zuri-shaday</div>
@@ -249,25 +286,60 @@
             <span>Email</span>
             <strong>avielzurishaday@gmail.com</strong>
           </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/aviel-zuri-shaday" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+      <a class="contact-card" href="https://www.linkedin.com/in/aviel-zuri-shaday" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <span>LinkedIn</span>
             <strong>/in/aviel-zuri-shaday</strong>
+          </a>
+      <a class="contact-card" href="pdf/Aviel_Resume_2025.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf" aria-label="Resume PDF">
+            <span>Resume</span>
+            <strong>Download (PDF)</strong>
           </a>
         </div>
       </section>
     </main>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">▲</button>
 
     <footer class="site-footer">
       <div class="container tiny">© <span id="year"></span> Aviel Zuri‑Shaday</div>
     </footer>
 
     <!-- Lightbox Modal -->
-    <dialog id="lightbox" class="lightbox" aria-label="Image gallery">
+    <dialog id="lightbox" class="lightbox" aria-label="Image gallery" aria-modal="true" role="dialog">
       <button id="lightbox-close" class="lightbox-close" aria-label="Close">×</button>
       <div class="lightbox-content">
         <img id="lightbox-image" alt="Project image" />
       </div>
       <div class="lightbox-strip" id="lightbox-strip" role="list"></div>
+    </dialog>
+
+    <!-- Project Detail Modals -->
+    <dialog id="modal-orbit" class="modal" aria-modal="true" role="dialog" aria-labelledby="orbit-title">
+      <div class="modal-header">
+        <h3 id="orbit-title">Orbital Dynamics Simulator — Details</h3>
+        <button class="modal-close" data-close type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Custom parameters: altitude, inclination, eccentricity; dynamic scaling for clarity.</li>
+          <li>SciPy lsoda ODE solver; Kepler/Newton equations; 3D Matplotlib animation.</li>
+          <li>Interactive: tail highlighting, legend, axes; time-optimized step sizing.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-otv" class="modal" aria-modal="true" role="dialog" aria-labelledby="otv-title">
+      <div class="modal-header">
+        <h3 id="otv-title">Over Terrain Vehicle (OTV) — Details</h3>
+        <button class="modal-close" data-close type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Arduino C++ navigation with LiDAR scanning, color detection, servo actuation.</li>
+          <li>Electrical, chassis, and software integration; power budgeting and runtime analysis.</li>
+          <li>Live testing and iteration: motor calibration, navigation precision, measurement reliability.</li>
+        </ul>
+      </div>
     </dialog>
 
     <script type="application/ld+json">
@@ -277,7 +349,7 @@
         "name": "Aviel Zuri-Shaday",
         "url": "https://avielzuri.github.io/",
         "email": "mailto:avielzurishaday@gmail.com",
-        "telephone": "+1-347-241-7945",
+        
         "address": {"@type": "PostalAddress", "addressLocality": "Queens", "addressRegion": "NY", "addressCountry": "US"},
         "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Maryland"},
         "sameAs": [

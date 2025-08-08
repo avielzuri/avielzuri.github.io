@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b0d12"/>
+      <stop offset="1" stop-color="#11141b"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7cc4ff"/>
+      <stop offset="1" stop-color="#a1ffcb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" font-family="Inter,Arial" font-size="64" font-weight="800" fill="url(#g)">Aviel Zuri‑Shaday</text>
+    <text x="0" y="76" font-family="Inter,Arial" font-size="28" fill="#b2b9c5">Aerospace Engineering @ UMD • GPA 3.966</text>
+    <text x="0" y="128" font-family="Inter,Arial" font-size="30" fill="#e8ecf1">Orbital simulation • Autonomy • Mechatronics</text>
+  </g>
+  <circle cx="1050" cy="90" r="70" fill="rgba(124,196,255,0.12)"/>
+  <circle cx="1080" cy="120" r="30" fill="rgba(161,255,203,0.12)"/>
+  <rect x="80" y="420" width="1040" height="2" fill="rgba(255,255,255,0.1)"/>
+  <text x="80" y="470" font-family="JetBrains Mono,ui-monospace,Consolas,monospace" font-size="20" fill="#b2b9c5">Projects: Orbital Dynamics Simulator • Over Terrain Vehicle (OTV)</text>
+  <text x="80" y="510" font-family="Inter,Arial" font-size="20" fill="#e8ecf1">avielzuri.github.io</text>
+</svg>
+
+
